@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="330" viewBox="0 0 980 330" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5b6b7f"/>
+    </marker>
+    <style>
+      .box   { fill:#141a21; stroke:#2b3644; stroke-width:1.5; rx:10; }
+      .title { fill:#e8eef6; font-size:15px; font-weight:600; }
+      .sub   { fill:#93a3b8; font-size:12px; }
+      .lbl   { fill:#5b6b7f; font-size:11px; }
+      .accent{ fill:#00a2ff; }
+    </style>
+  </defs>
+
+  <rect width="980" height="330" fill="#0d1117"/>
+
+  <!-- 1 ISO -->
+  <rect class="box" x="20" y="110" width="170" height="96"/>
+  <text class="title" x="38" y="142">jeu.iso</text>
+  <text class="sub" x="38" y="163">XGD2 / XGD3 / XISO</text>
+  <text class="sub" x="38" y="181">volume XDVDFS</text>
+
+  <!-- 2 parseur -->
+  <rect class="box" x="235" y="96" width="190" height="124"/>
+  <text class="title" x="253" y="126">Parseur XDVDFS</text>
+  <text class="sub" x="253" y="147">partition détectée</text>
+  <text class="sub" x="253" y="165">arbre binaire</text>
+  <text class="sub" x="253" y="183">lecture streaming 64 bits</text>
+  <text class="sub" x="253" y="201">default.xex repéré</text>
+
+  <!-- 3 cache -->
+  <rect class="box" x="470" y="86" width="210" height="144"/>
+  <text class="title" x="488" y="116">hdd:\XIBoot\cache\</text>
+  <text class="sub" x="488" y="137">  &lt;nom_du_jeu&gt;\</text>
+  <text class="sub" x="488" y="155">    default.xex</text>
+  <text class="sub" x="488" y="173">    media\…</text>
+  <text class="sub" x="488" y="196">dossier temporaire</text>
+  <text class="sub" x="488" y="214">noms assainis (FATX)</text>
+
+  <!-- 4 launch -->
+  <rect class="box" x="725" y="110" width="170" height="96"/>
+  <text class="title" x="743" y="142">le jeu tourne</text>
+  <text class="sub" x="743" y="163">XLaunchNewImage</text>
+  <text class="sub" x="743" y="181">(le XEX est remplacé)</text>
+
+  <!-- flèches -->
+  <line x1="190" y1="158" x2="227" y2="158" stroke="#5b6b7f" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="425" y1="158" x2="462" y2="158" stroke="#5b6b7f" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="680" y1="158" x2="717" y2="158" stroke="#5b6b7f" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text class="lbl" x="200" y="148">analyse</text>
+  <text class="lbl" x="432" y="148">extrait</text>
+  <text class="lbl" x="690" y="148">lance</text>
+
+  <!-- purge -->
+  <rect x="330" y="262" width="520" height="46" rx="10" fill="#13202b" stroke="#00a2ff" stroke-width="1.4"/>
+  <text x="352" y="291" fill="#7fd4ff" font-size="14" font-weight="600">purge complète du cache — au démarrage, avant chaque lancement, après retour</text>
+
+  <path d="M 810 210 C 810 240 790 250 760 258" fill="none" stroke="#5b6b7f" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <path d="M 120 210 C 120 250 220 250 320 258" fill="none" stroke="#5b6b7f" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text class="lbl" x="96" y="240">jeu quitté / reboot / coupure</text>
+
+  <!-- légende -->
+  <circle cx="40" cy="42" r="5" fill="#00a2ff"/>
+  <text class="sub" x="54" y="47">XIBoot — lecteur d'ISO → lanceur XEX pour Xbox 360 moddée</text>
+</svg>

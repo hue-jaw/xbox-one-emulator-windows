@@ -1,0 +1,25 @@
+# Sorties de build
+build/
+*.o
+*.obj
+*.opp
+*.exe
+*.xex
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.map
+
+# Images de jeu / fixtures (volumineux, regenere avec `make fixtures`)
+*.iso
+*.zar
+*.god
+*.tar
+
+# Divers
+.DS_Store
+.vs/
+*.user
+*.suo
+Thumbs.db
